@@ -18,7 +18,7 @@
                 background-size: cover;
                 color: #ffffff;
                 font-family: 'Nunito', sans-serif;
-                font-weight: 200;
+                font-weight: 500;
                 height: 100vh;
                 margin: 0;
             }
@@ -48,13 +48,13 @@
             }
 
             .title {
-                font-size: 84px;
+                font-size: 92px;
             }
 
             .links > a {
                 color: #ffffff;
                 padding: 0 25px;
-                font-size: 13px;
+                font-size: 20px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
