@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Gamejam</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
@@ -13,7 +13,10 @@
         <style>
             html, body {
                 background-color: #fff;
-                color: #636b6f;
+                background-image: url(https://www.thehouseofindie.com/wp-content/uploads/2017/08/Globalgamejam.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                color: #ffffff;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
@@ -49,7 +52,7 @@
             }
 
             .links > a {
-                color: #636b6f;
+                color: #ffffff;
                 padding: 0 25px;
                 font-size: 13px;
                 font-weight: 600;
@@ -81,16 +84,12 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Gamejam
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="prijava">Prijava</a>
+                    <a href="dogodek">O dogodku</a>
                 </div>
             </div>
         </div>

@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PagesController@getIndex');
+
+Route::get('/prijava', 'PagesController@getPrijava');
+
+Route::get('/dogodek', 'PagesController@getdogodek');
