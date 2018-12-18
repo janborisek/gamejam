@@ -16,3 +16,7 @@ Route::get('/', 'PagesController@getIndex');
 Route::get('/prijava', 'PagesController@getPrijava');
 
 Route::get('/dogodek', 'PagesController@getdogodek');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

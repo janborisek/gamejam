@@ -71,12 +71,12 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/home') }}">Domov</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
+                        <a href="{{ route('login') }}">Prijava</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
+                            <a href="{{ route('register') }}">Registracija</a>
                         @endif
                     @endauth
                 </div>
@@ -84,11 +84,10 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Gamejam
+                    GameJam
                 </div>
 
                 <div class="links">
-                    <a href="prijava">Prijava</a>
                     <a href="dogodek">O dogodku</a>
                 </div>
             </div>
