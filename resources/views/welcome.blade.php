@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Gamejam</title>
+        <title>GameJam</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
@@ -13,9 +13,10 @@
         <style>
             html, body {
                 background-color: #fff;
-                background-image: url(https://www.thehouseofindie.com/wp-content/uploads/2017/08/Globalgamejam.jpg);
+                background-image: url("/img/background2.png");
                 background-repeat: no-repeat;
                 background-size: cover;
+                background-position: center;
                 color: #ffffff;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 500;
@@ -48,12 +49,12 @@
             }
 
             .title {
-                font-size: 92px;
+                font-size: 100px;
             }
 
             .links > a {
                 color: #ffffff;
-                padding: 0 25px;
+                padding: 0 72px;
                 font-size: 20px;
                 font-weight: 600;
                 letter-spacing: .1rem;
@@ -64,6 +65,19 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            .scv{
+                position: absolute;
+                right: 30px;
+                bottom: 00px;
+            }
+
+            .ers{
+                position: absolute;
+                left: 24px;
+                bottom: 00px;
+            }
+
         </style>
     </head>
     <body>
@@ -71,8 +85,16 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Domov</a>
+                        <a href="{{ url('/') }}">Domov</a>
+                        <a href="{{ url('/dogodek')}}">O dogodku</a>
+                        <a href="{{ url('/spored')}}">Spored</a>
+                        <a href="{{ url('/sponzor') }}">Sponzorji</a>
+                        <a href="{{ url('/home') }}">Profil</a>
                     @else
+                        <a href="{{ url('/') }}">Domov</a>
+                        <a href="{{ url('/dogodek')}}">O dogodku</a>
+                        <a href="{{ url('/spored')}}">Spored</a>
+                        <a href="{{ url('/sponzor') }}">Sponzorji</a>
                         <a href="{{ route('login') }}">Prijava</a>
 
                         @if (Route::has('register'))
@@ -83,14 +105,23 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    GameJam
-                </div>
+                <div class="title m-b-md"></div>
 
                 <div class="links">
-                    <a href="dogodek">O dogodku</a>
+
                 </div>
             </div>
+            <p>
+    <a href="http://scv.si/">
+        <img src="/img/scv.png" alt="scv" class="scv">
+    </a>
+</p>
+
+<p>
+    <a href="http://ers.scv.si/">
+        <img src="/img/ers.png" alt="ers" class="ers">
+    </a>
+</p>
         </div>
     </body>
 </html>

@@ -13,10 +13,12 @@
 
 Route::get('/', 'PagesController@getIndex');
 
-Route::get('/prijava', 'PagesController@getPrijava');
-
 Route::get('/dogodek', 'PagesController@getdogodek');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'PagesController@getHome');
+
+Route::get('/spored', 'PagesController@getSpored');
+
+Route::get('/sponzor', 'PagesController@getSponzor');

@@ -7,16 +7,20 @@
             return view('welcome');
         }
 
-        public function getPrijava(){
-            return view('prijava');
-        }
-
-        public function postPrijava(){
-
+        public function getSpored(){
+            return view('spored');
         }
 
         public function getDogodek(){
             return view('dogodek');
+        }
+
+        public function getHome(){
+            return view('home');
+        }
+
+        public function getSponzor(){
+            return view('sponzor');
         }
     }
 ?>

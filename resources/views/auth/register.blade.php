@@ -1,18 +1,44 @@
 @extends('layouts.app')
+       <style>
+            html, body {
+                background-color: #fff;
+                background-image: url("/img/background.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                color: #ffffff;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 500;
+                height: 100vh;
+                margin: 0;
+            }
 
+            .scv{
+                position: absolute;
+                right: 30px;
+                bottom: 00px;
+            }
+
+            .ers{
+                position: absolute;
+                left: 24px;
+                bottom: 00px;
+            }
+
+        </style>
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Registracija') }}</div>
+                <div class="card-header">{{ __('Registracija na dogodek') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
                         <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Ime') }}</label>
+                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Ime in priimek') }}</label>
 
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
@@ -74,4 +100,15 @@
         </div>
     </div>
 </div>
+<p>
+    <a href="http://scv.si/">
+        <img src="/img/scv.png" alt="scv" class="scv">
+    </a>
+</p>
+
+<p>
+    <a href="http://ers.scv.si/">
+        <img src="/img/ers.png" alt="ers" class="ers">
+    </a>
+</p>
 @endsection
