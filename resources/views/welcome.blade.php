@@ -13,7 +13,7 @@
         <style>
             html, body {
                 background-color: #fff;
-                background-image: url("/img/background2.png");
+                background-image: url("/img/background.png");
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
@@ -78,6 +78,10 @@
                 bottom: 00px;
             }
 
+            .logo{
+                position: absolute;
+            }
+
         </style>
     </head>
     <body>
@@ -122,6 +126,7 @@
         <img src="/img/ers.png" alt="ers" class="ers">
     </a>
 </p>
+<img src="/img/logo.png" alt="logo" class="logo">
         </div>
     </body>
 </html>
