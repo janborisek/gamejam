@@ -3,23 +3,23 @@
 
     class PagesController extends Controller {
 
-        public function getIndex(){
+        public function Index(){
             return view('welcome');
         }
 
-        public function getSpored(){
+        public function Spored(){
             return view('spored');
         }
 
-        public function getDogodek(){
+        public function Dogodek(){
             return view('dogodek');
         }
 
-        public function getHome(){
+        public function Home(){
             return view('home');
         }
 
-        public function getSponzor(){
+        public function Sponzor(){
             return view('sponzor');
         }
     }

@@ -11,14 +11,14 @@
 |
 */
 
-Route::get('/', 'PagesController@getIndex');
+Route::get('/', 'PagesController@Index');
 
-Route::get('/dogodek', 'PagesController@getdogodek');
+Route::get('/dogodek', 'PagesController@dogodek');
 
 Auth::routes();
 
-Route::get('/home', 'PagesController@getHome');
+Route::get('/home', 'PagesController@Home');
 
-Route::get('/spored', 'PagesController@getSpored');
+Route::get('/spored', 'PagesController@Spored');
 
-Route::get('/sponzor', 'PagesController@getSponzor');
+Route::get('/sponzor', 'PagesController@Sponzor');

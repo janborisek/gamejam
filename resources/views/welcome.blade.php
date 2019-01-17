@@ -2,10 +2,10 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>GameJam</title>
-
+        <title>Game Jam</title>
+<link rel="icon" href="/public/img/logo.png">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
 
@@ -13,7 +13,7 @@
         <style>
             html, body {
                 background-color: #fff;
-                background-image: url("/img/background.png");
+                background-image: url("/public/img/background.png");
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
@@ -54,12 +54,13 @@
 
             .links > a {
                 color: #ffffff;
-                padding: 0 72px;
+                padding: 0 26px;
                 font-size: 20px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
+                
             }
 
             .m-b-md {
@@ -81,7 +82,6 @@
             .logo{
                 position: absolute;
             }
-
         </style>
     </head>
     <body>
@@ -99,10 +99,10 @@
                         <a href="{{ url('/dogodek')}}">O dogodku</a>
                         <a href="{{ url('/spored')}}">Spored</a>
                         <a href="{{ url('/sponzor') }}">Sponzorji</a>
-                        <a href="{{ route('login') }}">Prijava</a>
+                        <a href="{{ route('login') }}">Profil</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Registracija</a>
+                            <a href="{{ route('register') }}">Prijava na dogodek</a>
                         @endif
                     @endauth
                 </div>
@@ -116,17 +116,17 @@
                 </div>
             </div>
             <p>
-    <a href="http://scv.si/">
-        <img src="/img/scv.png" alt="scv" class="scv">
+    <a href="http://www.scv.si/">
+        <img src="/public/img/scv.png" alt="scv" class="scv">
     </a>
 </p>
 
 <p>
-    <a href="http://ers.scv.si/">
-        <img src="/img/ers.png" alt="ers" class="ers">
+    <a href="http://ers.scv.si/sl/">
+        <img src="/public/img/ers.png" alt="ers" class="ers">
     </a>
 </p>
-<img src="/img/logo.png" alt="logo" class="logo">
+<img src="/public/img/logo.png" alt="logo" class="logo">
         </div>
     </body>
 </html>

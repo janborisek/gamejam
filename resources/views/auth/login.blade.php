@@ -1,8 +1,10 @@
 @extends('layouts.app')
+<title>Game Jam</title>
+<link rel="icon" href="/public/img/logo.png">
 <style>
             html, body {
                 background-color: #fff;
-                background-image: url("/img/background.png");
+                background-image: url("/public/img/background.png");
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
@@ -97,14 +99,14 @@
     </div>
 </div>
 <p>
-    <a href="http://scv.si/">
-        <img src="/img/scv.png" alt="scv" class="scv">
+    <a href="http://www.scv.si/">
+        <img src="/public/img/scv.png" alt="scv" class="scv">
     </a>
 </p>
 
 <p>
-    <a href="http://ers.scv.si/">
-        <img src="/img/ers.png" alt="ers" class="ers">
+    <a href="http://ers.scv.si/sl">
+        <img src="/public/img/ers.png" alt="ers" class="ers">
     </a>
 </p>
 @endsection

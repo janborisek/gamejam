@@ -1,11 +1,12 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
-
+<title>Game Jam</title>
+<link rel="icon" href="/public/img/logo.png">
        <!-- Styles -->
        <style>
             html, body {
                 background-color: #fff;
-                background-image: url("/img/background.png");
+                background-image: url("/public/img/background.png");
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
@@ -46,7 +47,7 @@
 
             .links > a {
                 color: #ffffff;
-                padding: 0 72px;
+                padding: 0 26px;
                 font-size: 20px;
                 font-weight: 600;
                 letter-spacing: .1rem;
@@ -110,10 +111,10 @@
                         <a href="{{ url('/dogodek')}}">O dogodku</a>
                         <a href="{{ url('/spored')}}">Spored</a>
                         <a href="{{ url('/sponzor') }}">Sponzorji</a>
-                        <a href="{{ route('login') }}">Prijava</a>
+                        <a href="{{ route('login') }}">Profil</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Registracija</a>
+                            <a href="{{ route('register') }}">Prijava na dogodek</a>
                         @endif
                     @endauth
                 </div>
@@ -123,20 +124,20 @@
                 <div class="title m-b-md">Sponzorji</div>
 
                 <table>
-                    <tr><td colspan="2" align="center"><img src="/img/gamevan.png" height="140" class="sponz"></td></tr>
-                    <tr><td><img src="/img/redbull.png" height="160" class="sponz" align="center"></td><td><img src="/img/mercator.png" height="250" class="sponz" align="right"></td></tr>
+                    <tr><td colspan="2" align="center"><a href="https://gamevan.eu/"><img src="/public/img/gamevan2.png" height="140" class="sponz"></a></td></tr>
+                    <tr><td><a href="https://www.redbull.com/si-sl/"><img src="/public/img/redbull.png" height="160" class="sponz" align="center"></a></td><td><a href="https://www.facebook.com/trgovinainput/"><img src="/public/img/input.png" height="250" class="sponz" align="right"></a></td></tr>
                 </table>
 
             </div>
             <p>
-    <a href="http://scv.si/">
-        <img src="/img/scv.png" alt="scv" class="scv">
+    <a href="http://www.scv.si/">
+        <img src="/public/img/scv.png" alt="scv" class="scv">
     </a>
 </p>
 
 <p>
-    <a href="http://ers.scv.si/">
-        <img src="/img/ers.png" alt="ers" class="ers">
+    <a href="http://ers.scv.si/sl">
+        <img src="/public/img/ers.png" alt="ers" class="ers">
     </a>
 </p>
         </div>
