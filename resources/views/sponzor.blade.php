@@ -1,12 +1,12 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
 <title>Game Jam</title>
-<link rel="icon" href="/public/img/logo.png">
+<link rel="icon" href="/../img/logo.png">
        <!-- Styles -->
        <style>
             html, body {
                 background-color: #fff;
-                background-image: url("/public/img/background.png");
+                background-image: url("/../img/background.png");
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
@@ -78,18 +78,6 @@
                 font-size: 34px;
             }
 
-            .scv{
-                position: absolute;
-                right: 30px;
-                bottom: 00px;
-            }
-
-            .ers{
-                position: absolute;
-                left: 24px;
-                bottom: 00px;
-            }
-
             .sponz{
                 padding-top: 32px;
                 padding-bottom: 32px;
@@ -124,22 +112,14 @@
                 <div class="title m-b-md">Sponzorji</div>
 
                 <table>
-                    <tr><td colspan="2" align="center"><a href="https://gamevan.eu/"><img src="/public/img/gamevan2.png" height="140" class="sponz"></a></td></tr>
-                    <tr><td><a href="https://www.redbull.com/si-sl/"><img src="/public/img/redbull.png" height="160" class="sponz" align="center"></a></td><td><a href="https://www.facebook.com/trgovinainput/"><img src="/public/img/input.png" height="250" class="sponz" align="right"></a></td></tr>
+                    <tr><td colspan="2" align="center"><a href="https://gamevan.eu/"><img src="/../img/gamevan2.png" height="140" class="sponz"></a></td></tr>
+                    <tr><td><a href="https://www.redbull.com/si-sl/"><img src="/../img/redbull.png" height="160" class="sponz" align="center"></a></td>
+                        <td><a href="http://www.xcom.si/"><img src="/../img/xcom.png" height="96" class="sponz" align="right"></a></td></tr>
                 </table>
 
             </div>
             <p>
-    <a href="http://www.scv.si/">
-        <img src="/public/img/scv.png" alt="scv" class="scv">
-    </a>
-</p>
-
-<p>
-    <a href="http://ers.scv.si/sl">
-        <img src="/public/img/ers.png" alt="ers" class="ers">
-    </a>
-</p>
+@include('/opt/sola');
         </div>
     </body>
 

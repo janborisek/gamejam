@@ -1,10 +1,10 @@
 @extends('layouts.app')
 <title>Game Jam</title>
-<link rel="icon" href="/public/img/logo.png">
+<link rel="icon" href="/../img/logo.png">
 <style>
             html, body {
                 background-color: #fff;
-                background-image: url("/public/img/background.png");
+                background-image: url("/../img/background.png");
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
@@ -17,14 +17,20 @@
 
             .scv{
                 position: absolute;
-                right: 30px;
+                right: 8px;
                 bottom: 00px;
             }
 
             .ers{
                 position: absolute;
-                left: 24px;
+                left: 2px;
                 bottom: 00px;
+            }
+
+            .fb{
+                position: absolute;
+                top: 60px;
+                left: 2px;
             }
 
         </style>
@@ -43,21 +49,15 @@
                         </div>
                     @endif
 
-                    Se vidimo!<br>Ekipa Game Jam
+                    Se vidimo!<br>Ekipa Game Jam<br><br>
+
+                    Če želite delati v ekipi, jo lahko naredite tukaj.<br><br>
+
+                    Spodaj pa se lahko pridružite že obstoječi ekipi.<br>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<p>
-    <a href="http://www.scv.si/">
-        <img src="/public/img/scv.png" alt="scv" class="scv">
-    </a>
-</p>
-
-<p>
-    <a href="http://ers.scv.si/sl">
-        <img src="/public/img/ers.png" alt="ers" class="ers">
-    </a>
-</p>
+@include('/opt/sola');
 @endsection

@@ -1,12 +1,12 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
 <title>Game Jam</title>
-<link rel="icon" href="/public/img/logo.png">
+<link rel="icon" href="/../img/logo.png">
        <!-- Styles -->
        <style>
             html, body {
                 background-color: #fff;
-                background-image: url("/public/img/background.png");
+                background-image: url("/../img/background.png");
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
@@ -64,19 +64,6 @@
                 padding-right: 150px;
                 font-size: 26px;
             }
-
-            .scv{
-                position: absolute;
-                right: 30px;
-                bottom: 00px;
-            }
-
-            .ers{
-                position: absolute;
-                left: 24px;
-                bottom: 00px;
-            }
-            
         </style>
  <body>
         <div class="flex-center position-ref full-height">
@@ -106,7 +93,7 @@
                 <div class="title m-b-md">O dogodku</div>
 
                 <div class="besedilo">
-                    
+
     GameJam je dogodek na katerem se boste udeleženci pomerili v izdelovanju video iger.<br>
     Cilj je narediti najbolšo igro v 24 urah.<br><br>
     Dogodek se bo odvijal v Dvorani Gaudeamus in sicer 31. Januarja in 1. Februarja.<br>
@@ -120,17 +107,7 @@
     Se vidimo!<br>
     Ekipa Game Jam
                 </div>
-            <p>
-    <a href="http://www.scv.si/">
-        <img src="/public/img/scv.png" alt="scv" class="scv">
-    </a>
-</p>
-
-<p>
-    <a href="http://ers.scv.si/sl/">
-        <img src="/public/img/ers.png" alt="ers" class="ers">
-    </a>
-</p>
+            @include('/opt/sola');
             </div>
         </div>
     </body>

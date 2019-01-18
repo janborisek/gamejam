@@ -5,15 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>Game Jam</title>
-<link rel="icon" href="/public/img/logo.png">
+<link rel="icon" href="/../img/logo.png">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
-                background-image: url("/public/img/background.png");
+                background-image: url("/../img/background.png");
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
@@ -22,6 +21,28 @@
                 font-weight: 500;
                 height: 100vh;
                 margin: 0;
+            }
+
+            @media only screen and (max-width: 1450px) {
+                .logo {
+                    width: 80%;
+                }
+                .links {
+                    color: #ffffff;
+                    margin-left: 12px;
+                    font-size: 24px;
+                    font-weight: 600;
+                    letter-spacing: .1rem;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+                .scv{
+                    width: 20%;
+                }
+                .ers{
+                    width: 20%;
+                }
+
             }
 
             .full-height {
@@ -48,10 +69,6 @@
                 text-align: center;
             }
 
-            .title {
-                font-size: 100px;
-            }
-
             .links > a {
                 color: #ffffff;
                 padding: 0 26px;
@@ -60,7 +77,7 @@
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
-                
+
             }
 
             .m-b-md {
@@ -69,18 +86,8 @@
 
             .scv{
                 position: absolute;
-                right: 30px;
+                right: 8px;
                 bottom: 00px;
-            }
-
-            .ers{
-                position: absolute;
-                left: 24px;
-                bottom: 00px;
-            }
-
-            .logo{
-                position: absolute;
             }
         </style>
     </head>
@@ -115,18 +122,8 @@
 
                 </div>
             </div>
-            <p>
-    <a href="http://www.scv.si/">
-        <img src="/public/img/scv.png" alt="scv" class="scv">
-    </a>
-</p>
-
-<p>
-    <a href="http://ers.scv.si/sl/">
-        <img src="/public/img/ers.png" alt="ers" class="ers">
-    </a>
-</p>
-<img src="/public/img/logo.png" alt="logo" class="logo">
+<img src="/../img/logo.png" alt="logo" class="logo">
+@include('/opt/sola');
         </div>
     </body>
 </html>

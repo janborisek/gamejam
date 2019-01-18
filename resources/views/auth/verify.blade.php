@@ -1,10 +1,10 @@
 @extends('layouts.app')
 <title>Game Jam</title>
-<link rel="icon" href="/public/img/logo.png">
+<link rel="icon" href="/../img/logo.png">
     <style>
             html, body {
                 background-color: #fff;
-                background-image: url("/public/img/background.png");
+                background-image: url("/../img/background.png");
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
@@ -17,14 +17,20 @@
 
             .scv{
                 position: absolute;
-                right: 30px;
+                right: 8px;
                 bottom: 00px;
             }
 
             .ers{
                 position: absolute;
-                left: 24px;
+                left: 2px;
                 bottom: 00px;
+            }
+
+            .fb{
+                position: absolute;
+                top: 60px;
+                left: 2px;
             }
 
         </style>
@@ -33,12 +39,12 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Verify Your Email Address') }}</div>
+                <div class="card-header">{{ __('Preveri tvoj E-Mail') }}</div>
 
                 <div class="card-body">
                     @if (session('resent'))
                         <div class="alert alert-success" role="alert">
-                            {{ __('Povezavo za preverjanje računa smo poslali na E-mail naslov.') }}
+                            {{ __('Povezavo za preverjanje računa smo poslali na E-Mail naslov.') }}
                         </div>
                     @endif
 
@@ -51,13 +57,19 @@
 </div>
 <p>
     <a href="http://www.scv.si/">
-        <img src="/public/img/scv.png" alt="scv" class="scv">
+        <img src="/../img/scv.png" alt="scv" class="scv">
     </a>
 </p>
 
 <p>
     <a href="http://ers.scv.si/sl">
-        <img src="/public/img/ers.png" alt="ers" class="ers">
+        <img src="/../img/ers.png" alt="ers" class="ers">
+    </a>
+</p>
+
+<p>
+    <a href="https://www.facebook.com/GameJam-2019-2023832894377775/">
+        <img src="/../img/fb.png" alt="ers" class="fb" height="110">
     </a>
 </p>
 @endsection

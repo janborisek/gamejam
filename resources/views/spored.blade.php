@@ -1,12 +1,12 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
 <title>Game Jam</title>
-<link rel="icon" href="/public/img/logo.png">
+<link rel="icon" href="/../img/logo.png">
        <!-- Styles -->
        <style>
             html, body {
                 background-color: #fff;
-                background-image: url("/public/img/background.png");
+                background-image: url("/../img/background.png");
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
@@ -88,18 +88,6 @@
                 font-size: 38px;
             }
 
-            .scv{
-                position: absolute;
-                right: 30px;
-                bottom: 00px;
-            }
-
-            .ers{
-                position: absolute;
-                left: 24px;
-                bottom: 00px;
-            }
-
         </style>
  <body>
         <div class="flex-center position-ref full-height">
@@ -141,17 +129,7 @@
                     <tr><td class="dan3">17:00</td><td class="dan">Konec dogodka</td></tr>
                 </table>
             </div>
-            <p>
-    <a href="http://www.scv.si/">
-        <img src="/public/img/scv.png" alt="scv" class="scv">
-    </a>
-</p>
-
-<p>
-    <a href="http://www.ers.scv.si/sl">
-        <img src="/public/img/ers.png" alt="ers" class="ers">
-    </a>
-</p>
+@include('/opt/sola');
         </div>
     </body>
 
