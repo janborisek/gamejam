@@ -22,5 +22,13 @@
         public function Sponzor(){
             return view('sponzor');
         }
+
+        public function Ekipa(){
+            return view('ekipa');
+        }
+
+        public function Ekipe(){
+            return view('ekipe');
+        }
     }
 ?>

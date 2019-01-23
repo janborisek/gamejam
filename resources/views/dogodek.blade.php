@@ -107,7 +107,7 @@
     Se vidimo!<br>
     Ekipa Game Jam
                 </div>
-            @include('/opt/sola');
+            @include('/opt/sola')
             </div>
         </div>
     </body>

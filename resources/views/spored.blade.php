@@ -129,7 +129,7 @@
                     <tr><td class="dan3">17:00</td><td class="dan">Konec dogodka</td></tr>
                 </table>
             </div>
-@include('/opt/sola');
+@include('/opt/sola')
         </div>
     </body>
 

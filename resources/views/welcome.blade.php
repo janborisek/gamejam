@@ -123,7 +123,7 @@
                 </div>
             </div>
 <img src="/../img/logo.png" alt="logo" class="logo">
-@include('/opt/sola');
+@include('/opt/sola')
         </div>
     </body>
 </html>

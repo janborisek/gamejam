@@ -22,3 +22,11 @@ Route::get('/home', 'PagesController@Home');
 Route::get('/spored', 'PagesController@Spored');
 
 Route::get('/sponzor', 'PagesController@Sponzor');
+
+Route::get('/ekipa', 'PagesController@Ekipa');
+
+Route::get('/ekipe', 'PagesController@Ekipe');
+
+Route::post('/success', 'Controller@insert');
+
+Route::get('/ekipe', 'Controller@get');

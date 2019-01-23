@@ -57,7 +57,7 @@
 
             .m-b-md {
                 font-size: 82px;
-                padding-bottom: 30px;
+                padding-bottom: 16px;
             }
             .tabela{
                 padding-left: 50px;
@@ -79,8 +79,10 @@
             }
 
             .sponz{
-                padding-top: 32px;
-                padding-bottom: 32px;
+                padding-top: 22px;
+                padding-bottom: 22px;
+                padding-left: 28px;
+                padding-right: 28px;
             }
 
         </style>
@@ -112,14 +114,21 @@
                 <div class="title m-b-md">Sponzorji</div>
 
                 <table>
-                    <tr><td colspan="2" align="center"><a href="https://gamevan.eu/"><img src="/../img/gamevan2.png" height="140" class="sponz"></a></td></tr>
-                    <tr><td><a href="https://www.redbull.com/si-sl/"><img src="/../img/redbull.png" height="160" class="sponz" align="center"></a></td>
-                        <td><a href="http://www.xcom.si/"><img src="/../img/xcom.png" height="96" class="sponz" align="right"></a></td></tr>
-                </table>
+                    <tr>
+                        <td align="left"><a href="https://gamevan.eu/"><img src="/../img/gamevan2.png" height="110" class="sponz"></a></td>
+                        <td align="center"><a href="https://www.redbull.com/si-sl/"><img src="/../img/redbull.png" height="160" class="sponz"></a></td></tr>
+                    <tr>
+                        <td align="center"><a href="http://www.xcom.si/"><img src="/../img/xcom.png" height="96" class="sponz"></a></td>
+                        <td align="center"><a href="https://www.facebook.com/trgovinainput/"><img src="/../img/input.png" height="180"></a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center"><a href="http://ma-ma.si/portfolio-item/saleski-biser2017/"><img src="/../img/biser.png" height="120" class="sponz"></a></td>
+                    </tr>
+                    </table>
 
             </div>
             <p>
-@include('/opt/sola');
+@include('/opt/sola')
         </div>
     </body>
 

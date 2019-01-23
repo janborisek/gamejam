@@ -1,5 +1,4 @@
 @extends('layouts.app')
-
 <title>Game Jam</title>
 <link rel="icon" href="/../img/logo.png">
 <style>
@@ -34,21 +33,14 @@
                 left: 2px;
             }
 
-            .button {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.3s;
-  cursor: pointer;
-}
+            .ekipe{
+                padding-top:6px;
+                padding-bottom:6px;
+                padding-left:14px;
+                padding-right:14px;
+            }
 
-.button2:hover {
+            .button2:hover {
   background-color: white;
   color: black;
 
@@ -81,7 +73,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Prijavljeni ste na ERŠ GameJam 2019!</div>
+                <div class="card-header">Pridruži se ekipi</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -90,14 +82,19 @@
                         </div>
                     @endif
 
-                    <!--Če želite delati v ekipi, jo lahko naredite tukaj.<br><br>
-                    <a href="{{ url('/ekipa') }}" ><button class="button button2">Naredi novo ekipo</button></a><br><br>
 
-                    Spodaj pa se lahko pridružite že obstoječi ekipi.<br><br>
-                    <a href="{{ url('/ekipe') }}" ><button class="button button2">Pridruži se ekipi</button></a>-->
+                            <table border="1">
+                                <tr>
+                                    <td align="center" class="ekipe"><b>Ime<b></td>
+                                </tr>
+                                @foreach ($data as $value)
+                                <tr>
+                                    <td class="ekipe">{{$value->ime}}</td>
+                                <td class="ekipe"><a href="/pridruzi/{{$value->id}}" ><button class="button1 button2">Pridruži se ekipi</button></a></td>
 
-                    Se vidimo!<br>
-                    Ekipa Gamejam
+                                </tr>
+                                @endforeach
+                            </table>
                 </div>
             </div>
         </div>

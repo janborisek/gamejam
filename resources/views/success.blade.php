@@ -81,7 +81,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Prijavljeni ste na ERŠ GameJam 2019!</div>
+                <div class="card-header">Vaša ekipa!</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -89,15 +89,8 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    <!--Če želite delati v ekipi, jo lahko naredite tukaj.<br><br>
-                    <a href="{{ url('/ekipa') }}" ><button class="button button2">Naredi novo ekipo</button></a><br><br>
-
-                    Spodaj pa se lahko pridružite že obstoječi ekipi.<br><br>
-                    <a href="{{ url('/ekipe') }}" ><button class="button button2">Pridruži se ekipi</button></a>-->
-
-                    Se vidimo!<br>
-                    Ekipa Gamejam
+                        <b>Ime</b><br> {{$ime}}<br><br>
+                        <b>Opis</b><br> {{$opis}}
                 </div>
             </div>
         </div>
