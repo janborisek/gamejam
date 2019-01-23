@@ -57,7 +57,6 @@
 
             .m-b-md {
                 font-size: 82px;
-                padding-bottom: 16px;
             }
             .tabela{
                 padding-left: 50px;
@@ -79,10 +78,10 @@
             }
 
             .sponz{
-                padding-top: 22px;
-                padding-bottom: 22px;
-                padding-left: 28px;
-                padding-right: 28px;
+                padding-top: 16px;
+                padding-bottom: 16px;
+                padding-left: 42px;
+                padding-right: 42px;
             }
 
         </style>
@@ -122,7 +121,8 @@
                         <td align="center"><a href="https://www.facebook.com/trgovinainput/"><img src="/../img/input.png" height="180"></a></td>
                     </tr>
                     <tr>
-                        <td colspan="2" align="center"><a href="http://ma-ma.si/portfolio-item/saleski-biser2017/"><img src="/../img/biser.png" height="120" class="sponz"></a></td>
+                        <td align="center"><a href="http://ma-ma.si/portfolio-item/saleski-biser2017/"><img src="/../img/biser.png" height="120" class="sponz"></a></td>
+                        <td align="center"><a href="https://www.mercator.si/"><img src="/../img/mercator.png" height="200"></a></td>
                     </tr>
                     </table>
 
